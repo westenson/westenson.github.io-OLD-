@@ -71,6 +71,8 @@ body{
     
     padding-top: 25px;
     padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-bottom: -200px;
     padding-bottom: 0px;
    
@@ -80,7 +82,13 @@ body{
 .about-container img{
     width: 275px;
     margin-top: -70px;
+    padding-right: 5px;
     
+    
+}
+
+.about-container .col-md-7{
+    padding-left: 50px;
 }
 
 .about-container p{
@@ -154,6 +162,7 @@ body{
     margin-bottom: 0px;
     padding-bottom: 50px;
     padding-left: 50px;
+    padding-right: 50px;
 }
 
 .now-container p{
@@ -348,6 +357,11 @@ body{
 
 }
 
+.booknotes .col-md-4{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .booknotes a{
   
     font-weight: bold;
@@ -440,7 +454,10 @@ body{
     color: rgb(75, 75, 75)
 }
 
-
+.projects .col-md-4{
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 .projects-box{
     background:white; 
