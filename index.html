@@ -23,6 +23,8 @@
         gtag('config', 'UA-166677991-1');
     </script>
 
+    <script src="smooth-scroll.polyfills.min.js"></script>
+
 
 
     <link rel="stylesheet" href="style.css">
@@ -353,12 +355,11 @@
     <!-- TODO currently having trouble getting this work - 
             i may have turned off animations in my operating system 
             - test on other device -->
-    <script src="path/to/smooth-scroll.polyfills.min.js"></script>
 
     <script>
         var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 1500,
-            offset: 0
+            speed: 500,
+            offset: 20
         });
     </script>
 

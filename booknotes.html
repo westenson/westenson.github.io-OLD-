@@ -30,6 +30,9 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
+
+    <script src="smooth-scroll.polyfills.min.js"></script>
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -42,7 +45,7 @@
         <div class="nav-bar">
             <nav class="navbar navbar-expand-lg">
 
-                <a class="navbar-brand" href="#top">wally estenson</a>
+                <a class="navbar-brand" href="index.html#top">wally estenson</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -318,12 +321,12 @@
     <!-- TODO currently having trouble getting this work - 
         i may have turned off animations in my operating system 
         - test on other device -->
-    <script src="path/to/smooth-scroll.polyfills.min.js"></script>
+
 
     <script>
         var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 1500,
-            offset: 0
+            speed: 500,
+            offset: 50
         });
     </script>
 
