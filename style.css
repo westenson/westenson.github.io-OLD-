@@ -27,6 +27,7 @@ body{
 .user-box img{
     border-radius: 50%;
     width: 300px;
+    
    
 }
 
@@ -44,6 +45,7 @@ body{
     bottom: 30px;
     position: absolute;
     left: 50%; 
+
     /* transform: translateX(50%); */
     border: 2px solid darkcyan;
     padding: 17px 10px 10px;
@@ -337,6 +339,7 @@ body{
     text-decoration: none;
     transition: color 0.5s;
     transition: font-weight 0s;
+ 
     
 }
 
@@ -346,6 +349,8 @@ body{
     font-weight: bold !important;
     
 }
+
+
 
 
 
@@ -387,8 +392,8 @@ body{
 .books-box{
     background:white; 
     
-    width: 300px; 
-    height: 160px;
+    width: 150%;
+    height: 250px;
 
     padding:10px;
     margin-top: 20px;
@@ -462,8 +467,8 @@ body{
 .projects-box{
     background:white; 
     
-    width: 300px; 
-    height: 160px;
+    width: 150%; 
+    height: 200px;
 
     padding:10px;
     margin-top: 20px;
