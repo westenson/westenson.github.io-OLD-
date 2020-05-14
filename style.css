@@ -1,0 +1,519 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  
+}
+
+/* Header CSS */
+
+#header
+{
+    height:100vh;
+    /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) url(img/background.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;   
+} 
+
+.user-box{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.user-box img{
+    border-radius: 50%;
+    width: 300px;
+    /* border: 0px solid rgb(0, 0, 0); */
+}
+
+.user-box h1{
+    color: darkcyan;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.user-box p{
+    color: slategray;
+}
+
+.scroll-btn{
+    bottom: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(50%);
+    border: 2px solid darkcyan;
+    padding: 15px 10px 10px;
+    border-radius: 50px; 
+}
+
+.scroll-bar span{
+    border: 2px solid darkcyan;
+    font-size: 1px;
+    border-radius: 50px;
+}
+
+.scroll-bar{
+    animation: mover 1s infinite alternate;
+}
+
+@keyframes mover { 
+    0%{transform: translateY(0);}
+    100%{transform: translateY(10px);}
+}
+
+/* About Section */
+
+.about-container {
+    
+    padding-top: 50px;
+    margin-bottom: -200px;
+    padding-right: 50px; 
+    padding-bottom: 0px;
+}
+
+.about-container img{
+    border-radius: 50%;
+    width: 50%;
+    
+}
+
+.about-container p{
+    color: rgb(75, 75, 75);
+}
+
+.about-container h3{
+    padding-top: 75px;
+    padding-bottom: 10px;
+    color: darkcyan;
+}
+
+.spacer{
+    background-color: rgb(247, 247, 247); 
+    padding-top: 50px;
+}
+
+
+/* Now Section */
+
+.now-container {
+    
+    padding-top: 50px;
+    margin-bottom: 0px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.now-container p{
+    color: rgb(75, 75, 75);
+}
+
+.now-container h3{
+    padding-top: 75px;
+    padding-bottom: 10px;
+    color: darkcyan;
+}
+
+.timeline{
+    list-style-type: none;
+    position: relative; 
+}
+
+.now-container .twitter-timeline{
+    padding-left: 100px;
+
+}
+
+/* add vertical line next to resume  */
+.timeline:before{
+    content: '';
+    background:darkcyan;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px; 
+    height: 100%;
+    z-index: 1; 
+}
+
+.timeline li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background:white; 
+}
+
+.timeline li h4{
+    background-color:  rgb(247, 247, 247);
+    padding: 5px 0 5px 20px;
+    column-rule-color: #fff;
+    font-size: 15px; 
+    color: rgb(75, 75, 75);
+}
+
+.timeline li h4 span{
+    font-weight: bold; 
+    color: darkcyan; 
+}
+
+.timeline li:before{
+    content: '';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid darkcyan;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+
+}
+
+
+
+
+/* Social Icons */
+
+.social-icons{
+    top: 50%;
+    transform: translateY(-50%);
+    position: sticky;
+    z-index: 1;
+    width: 80px;
+   
+}
+
+.social-icons ul{
+    padding: initial;
+
+}
+
+.social-icons ul li{
+    height: 40px;
+    width: 40px;
+    list-style-type: none;
+    padding-left: 12px;
+    padding-top: 6px;
+    margin-top:5px;
+    color: white;
+    background: darkcyan; 
+}
+
+.social-icons ul li:hover{
+    padding-left: 30px;
+    width: 80px;
+    transition: 1s;
+}
+
+
+
+/* Navigation Bar  */
+
+.profile-img{
+    /* height: 300px;   */
+    /* border-radius: 50%; */
+    width: 350px;
+    /* border: 0px solid rgb(0, 0, 0); */
+}
+
+
+.nav-bar{
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+
+.navbar {
+    background-color: rgb(247, 247, 247); 
+    height: 60px;
+    /* border: 2px solid lightgrey; */
+
+}
+
+.navbar-brand{
+    color: rgb(75, 75, 75) !important;
+    text-decoration: none;
+
+    transition: color 0s; 
+    transition: font-weight 0s;
+}
+ 
+.navbar-brand:hover {
+    color:  rgb(75, 75, 75) !important; 
+    font-weight: bold !important;
+}
+
+.nav-bar .fa-bars{
+    font-size: 35px;
+    color: darkgray;
+}
+
+.navbar-toggler{
+    outline: none !important;
+}
+
+.navbar nav{
+    float: right;
+    text-align: right;
+}
+
+.nav-link{
+    border-bottom: 1px transparent;
+    
+    color:rgb(75, 75, 75) !important;
+    text-decoration: none;
+    transition: color 0.5s;
+    transition: font-weight 0s;
+    
+}
+
+.nav-link:hover{
+    border-bottom: 1px solid darkcyan;
+    color: darkcyan !important;
+    font-weight: bold !important;
+    
+}
+
+
+
+/* Book Notes */
+
+.booknotes{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+
+
+.booknotes h3{
+    margin-bottom: 15px;
+    margin-top: 10px; 
+    color: darkcyan
+}
+
+.booknotes p{
+    color: rgb(75, 75, 75)
+}
+
+.books-box{
+    background:white; 
+    
+    width: 300px; 
+    height: 160px;
+
+    padding:10px;
+    margin-top: 20px;
+    border: 1px solid darkcyan;
+    
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+ 
+}
+
+.books-box span{
+    margin: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(75, 75, 75);
+}
+
+.books-box p{
+    font-size: 15px;
+    margin-top: 20px;
+    color: rgb(75, 75, 75);
+}
+
+
+.books-box:hover{
+    background: darkcyan;
+    color: #fff;
+
+
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    transition: 1s;
+}
+
+.books-box:hover p{
+    color: #fff;
+}
+
+.books-box:hover span{
+    color: #fff;
+}
+
+
+/* Projects */
+
+.projects{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.projects h3{
+    margin-bottom: 15px;
+    margin-top: 10px; 
+    color: darkcyan
+}
+
+.projects p{
+    color: rgb(75, 75, 75)
+}
+
+
+
+.projects-box{
+    background:white; 
+    
+    width: 300px; 
+    height: 160px;
+
+    padding:10px;
+    margin-top: 20px;
+    border: 1px solid darkcyan;
+    
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+ 
+}
+
+.projects-box span{
+    margin: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(75, 75, 75);
+}
+
+.projects-box p{
+    font-size: 15px;
+    margin-top: 20px;
+    color: rgb(75, 75, 75);
+    border-bottom: none !important;
+}
+
+
+.projects-box:hover{
+    background: darkcyan;
+    color: #fff;
+
+
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    transition: 1s;
+}
+
+.projects-box:hover p{
+    color: #fff;
+    text-decoration: none;
+}
+
+.projects a:hover{
+    text-decoration: none;
+}
+
+
+.projects-box:hover span{
+    color: #fff;
+}
+
+
+
+
+/* Challenges */
+.challenges{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+
+}
+
+.challenges h3{
+    margin-bottom: 15px;
+    margin-top: 10px; 
+    color: darkcyan
+}
+
+.challenges p{
+    color: rgb(75, 75, 75)
+}
+
+/* Contact Section */
+
+.contact{
+
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    background-color: rgb(247, 247, 247);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;   
+    color: rgb(75, 75, 75);
+
+
+}
+
+.contact a{
+    color: rgb(75, 75, 75);
+}
+
+.contact a:hover{
+    color: rgb(75, 75, 75);
+}
+
+.contact .row{
+    padding: 15px 0;
+ 
+}
+
+.contact .col-md-4 .fa{
+    padding: 10px;
+
+}
+
+.contact .btn{
+    padding: 10px 25px 10px 25px;
+    margin: 5px; 
+    border-radius: 30px;
+    border: 2px solid rgb(75, 75, 75);
+    background: transparent;
+    color: rgb(75, 75, 75)
+}
+
+
+.contact .btn:focus{
+    box-shadow: none !important;
+}
+
+.contact .btn:hover{
+    border: 2px solid darkcyan !important; 
+    background: darkcyan !important;
+
+    transition: 0.6s;
+}
+
+
+.contact .btn .fa{
+    margin-right: 10px; 
+    color: rgb(75, 75, 75);
+}
+
+.contact .btn .fa:hover{
+    margin-right: 10px; 
+    color: white !important;
+    transition: 0.6s;
+}
+
+

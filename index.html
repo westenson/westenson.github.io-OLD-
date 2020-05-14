@@ -1,117 +1,334 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Title Page</title>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-    </head>
 
-    <body>
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="left-side">
-                    <div class="nav-link-wrapper active-nav-link">
-                        <a href="index.html">Home</a>
-                    </div>
+<head>
+    <title>Wally Estenson</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;800&display=swap" rel="stylesheet">
 
-                    <div class="nav-link-wrapper">
-                        <a href="about.html">About</a>
-                    </div>  
-                </div>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 
-                <div class="right-side">
-                    <div class="brand">
-                        <div>Wally Estenson</div>
-                    </div>
-                </div>
-            </div> 
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-            <div class="content-wrapper">
-                <div class="portfolio-items-wrapper">
 
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
-                        
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/quip.png">
-                            </div>
+<body>
 
-                            <div class="subtitle">
-                                I built a website 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
-                            
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <!-- <img src="images/logos/dashtrack.png"> -->
-                                
-                            </div>
-
-                            <div class="subtitle">
-                                I built a website 2
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
-                            
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/open-devos.png">
-                            </div>
-
-                            <div class="subtitle">
-                                I built a website 2
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
-                            
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/open-devos.png">
-                            </div>
-
-                            <div class="subtitle">
-                                I built a website 2
-                            </div>
-                        </div>
-                    </div>
-                
-                    
-                </div>
-
+    <!-- Header Section -->
+    <section id="header">
+        <div class="container" text-center>
+            <div class="user-box">
+                <img src="img/wally.png">
+                <h1>wally estenson</h1>
+                <p>welcome to my site. i'm glad you're here!</p>
             </div>
         </div>
-    </body>
 
-<script>
-    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+        <div class="scroll-btn">
+            <div class="scroll-bar"><a href="#about"><span> </span></a></div>
+        </div>
+    </section>
 
-    portfolioItems.forEach(portfolioItem => {
-        portfolioItem.addEventListener('mouseover', () => {
-            // console.log() to see stuff in browser
-            portfolioItem.childNodes[1].classList.add('img-darken');
-        })    
+    <!-- User Info Section -->
+    <section id="user-info">
+
+        <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg">
+
+                <a class="navbar-brand" href="#top">wally estenson</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <i class="fa fa-bars"></i>
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">about </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#now">now </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">projects </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+
+        <!-- About Section -->
+        <div class="about-container" id="about">
+            <div class="row">
+                <div class="col-md-5 text-center">
+                    <img src="img/wally2.png" class="profile-img">
+                </div>
+
+                <div class="col-md-7">
+                    <h3>me in 30 seconds</h3>
+                    <p> I grew up in Minnesota.<br>
+                        I went to the University of Wisconsin.<br>
+                        I studied abroad in Hong Kong.<br>
+                        I majored in Finance and Economics.<br>
+                        I minored in Computer Science and Environmental Studies.<br>
+                        I will soon move to Chicago to work as an Investment Banking Analyst.<br>
+                        I have many interests, currently I am intrigued by financial technology and preventatitve
+                        healthcare.<br>
+                        I am most concerned about climate change, wealth inequality, mental health, and education
+                        inequality.<br>
+                        I am an avid outdoorsman with a love for hiking, skiing, biking, camping, and enjoying nature
+                        with friends<br>
+                        I am greatful for my health, a loving family, and exceptional friends <br>
+                        I love getting to know people and their stories, so please <a href="mailto:wmestenson@gmail.com"
+                            target="_blank">email</a> me.
+                        <br><br> Full resume <a href="resume.pdf" target="_blank">here.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Social Icons -->
+
+        <div class="social-icons">
+            <ul>
+                <a href="https://www.linkedin.com/in/wmestenson/" target="_blank">
+                    <li><i class="fa fa-linkedin"></i></li>
+                </a>
+                <a href="https://twitter.com/WallyEstenson" target="_blank">
+                    <li><i class="fa fa-twitter"></i></li>
+                </a>
+                <a href="https://www.instagram.com/wallyestenson/" target="_blank">
+                    <li><i class="fa fa-instagram"></i></li>
+                </a>
+                <!-- <a href="https://www.youtube.com/channel/UCX-lybiFffnhf4xvgfItjTg?view_as=subscriber" target="_blank"><li><i class="fa fa-youtube"></i></li></a> -->
+                <a href="https://github.com/westenson" target="_blank">
+                    <li><i class="fa fa-github"></i></li>
+                </a>
+                <a href="mailto:wmestenson@gmail.com" target="_blank">
+                    <li><i class="fa fa-envelope"></i></li>
+                </a>
+
+            </ul>
+        </div>
+
+        <div class="spacer"></div>
+
+        <!-- Now Section -->
+        <div class="now-container" id="now">
+
+            <h3 class="text-center">what i'm doing now</h3>
+            <p class="text-center">this is a <a href="https://nownownow.com/about" target="_blank">now page.</a> i use
+                this to motivate
+                myself and show you what i'm currently focused on. <br>i was inspired by <a
+                    href="https://nownownow.com/about" target="_blank">others.</a></p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="timeline">
+                            <li>
+                                <h4><span>1 - </span> Home Routine</h4>
+                                <p>I'm currently back in my hometown of Minnetonka, MN with my family.
+                                    I've been taking time to reflect on my college experience; like many, I
+                                    made wonderful friends who molded me into who I am today. there's a lot of sorrow
+                                    in leaving close ones, but I'm excited for what's to come, for them and myself.
+                                    I'm biking nearly every day and spending most of my time on personal projects.
+                                </p>
+
+                            </li>
+                            <li>
+                                <h4><span>2 - </span> Personal Website</h4>
+                                <p>I'm spending a lot of time building this site! I decided I'd like to strengthen
+                                    my online presence. A personal site will act as a centralized hub for my projects
+                                    and social media as well as a more personal spot to express myself.
+                                </p>
+
+                            </li>
+                            <li>
+                                <h4><span>3 - </span> Work Preparation</h4>
+                                <p>I start my first full-time job at William Blair in Chicago
+                                    as an Investment Banking Analyst in July. I'm spending time
+                                    stuyding for the SIE Exam along with several internal exams.
+                                </p>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="timeline">
+                            <li>
+                                <h4><span>4 - </span> Book Notes</h4>
+                                <p>One of the most important things that I've learned in recent
+                                    years is the power of reflection. In a world with so much content to
+                                    consume, most of it goes in one ear and out the other. The most powerful
+                                    technique I've found to retain important information is delibrate reflection.
+                                    That is why I'll be spending time every week for the foreseable future
+                                    reflecting on and condensing the notes I've taken on every book I read during
+                                    college. I hope to keep a permanent database of my notes on this site for myself
+                                    and anyone who cares to reflect on.
+                                </p>
+
+                            </li>
+                            <li>
+                                <h4><span>5 - </span> YouTube</h4>
+                                <p>Another one of the most important things that I've learned in recent years
+                                    is the power of incremental progress. Many skills we hope to learn take many hours
+                                    of practice to get any results. I've become particularly fond of YouTubers doing
+                                    something
+                                    along the lines of a "30 Day Challenge" do show the immense effects of slow,
+                                    incremental progress
+                                    everyday. That is why, I'm currently in the works of putting together a YouTube
+                                    channel where
+                                    I pick a skill each month to practice each day. My hope my documentation of my
+                                    progress will act as a
+                                    form of motivation for myself and others.
+                                </p>
+
+                            </li>
+                            <!-- <li> 
+                                            <h4><span>2019 - </span> Investment Banking Analyst</h4>
+                                            <p>description of my time. <br>
         
-        portfolioItem.addEventListener('mouseout', () => {
-     
-            portfolioItem.childNodes[1].classList.remove('img-darken');
-        })   
-    })
+                                            <b>Company</b> - William Blair <br>
+                                            <b>Duration</b> - Summer 2019 <br>
+                                            <b>Location</b> - Chicago, IL <br>
+                                            </p>
+                                            
+                                        </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center">updated May 13th, 2020 from minnetonka, mn.</p>
+
+        </div>
+        </div>
+
+        <div class="spacer"></div>
 
 
-</script>
+        <!-- Projects -->
+        <div class="projects" id="projects">
+            <div class="container">
+                <h3 class="text-center">projects</h3>
+                <p class="text-center"> my current and past projects</p>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="booknotes.html"><span>
+                                <div class="projects-box">
+
+                                    <span>Book Notes</span>
+
+                                    <p> Notes on every book I've read since the beginning of college. A way for me to
+                                        reflect and share.</p>
+                                </div>
+                            </span></a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="challenges.html"><span>
+                                <div class="projects-box">
+
+                                    <span>30 Day Challenges</span>
+
+                                    <p> Notes on every book I've read since the beginning of college. A way for me to
+                                        reflect and share.</p>
+                                </div>
+                            </span></a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="https://github.com/westenson"><span>
+                                <div class="projects-box">
+
+                                    <span>This Website</span>
+
+                                    <p> Notes on every book I've read since the beginning of college. A way for me to
+                                        reflect and share.</p>
+                                </div>
+                            </span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spacer"></div>
 
 
+        <!-- Contact -->
+
+        <div class="contact" id="contact">
+            <div class="container text-center">
+                <h3>contact me</h3>
+                <p class="text-center"> i'd love to connect. please reach out!</p>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="fa fa-phone"></i>
+                        <p>612-859-9900</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:wmestenson@gmail.com" target="_blank">wmestenson@gmail.com</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-chrome"></i>
+                        <p><a href="westenson.com" target="_blank">westenson.com</a></p>
+                    </div>
+                </div>
+
+
+                <button type="button" class="btn btn-primary">
+                    <i class="fa fa-download"></i><a href="resume.pdf" target="_blank">Resume</a></button>
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Smooth Scroll -->
+    <!-- TODO currently having trouble getting this work - 
+            i may have turned off animations in my operating system 
+            - test on other device -->
+    <script src="path/to/smooth-scroll.polyfills.min.js"></script>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1500,
+            offset: 0
+        });
+    </script>
+
+
+
+</body>
 
 </html>
