@@ -89,6 +89,12 @@ body{
     
 }
 
+@media (max-width:629px) {
+    img#optionalstuff {
+      display: none;
+    }
+  }
+
 .about-container .col-md-7{
     padding-left: 50px;
 }
@@ -251,7 +257,7 @@ body{
 
 .social-icons{
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
     position: sticky;
     z-index: 1;
     width: 80px;
