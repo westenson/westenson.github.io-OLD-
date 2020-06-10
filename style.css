@@ -1,11 +1,16 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+   
 
     overflow-y: scroll;
     /* overflow-x: hidden; */
 
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
 }
 
 
@@ -33,28 +38,32 @@ body{
 
 .user-box h1{
     color: darkcyan;
-    font-weight: bold;
+    font-family: 'Inter', sans-serif;   
     margin: 10px;
+ 
+
+    font-weight: 900;
 }
 
 .user-box p{
     color: slategray;
+  
 }
-
+/* 
 .scroll-btn{
     bottom: 30px;
     position: absolute;
     left: 50%; 
 
-    /* transform: translateX(50%); */
-    border: 2px solid darkcyan;
+    transform: translateX(50%);
+    border: 2px solid #D92516;
     padding: 17px 10px 10px;
     border-radius: 20px; 
 }
 
 .scroll-bar span{
-    border: 2px solid darkcyan;
-    font-size: 1px;
+    border: 2px solid #D92516;
+    font-size: 2px;
     border-radius: 50px;
 }
 
@@ -65,7 +74,7 @@ body{
 @keyframes mover { 
     0%{transform: translateY(0);}
     100%{transform: translateY(10px);}
-}
+} */
 
 /* About Section */
 
@@ -73,13 +82,15 @@ body{
     
     padding-top: 25px;
     padding-bottom: 25px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 300px;
+    padding-right: 300px;
     margin-bottom: -200px;
     padding-bottom: 0px;
    
  
 }
+
+
 
 .about-container img{
     width: 275px;
@@ -93,11 +104,17 @@ body{
     img#optionalstuff {
       display: none;
     }
+
+    .about-container {
+        padding-left: 75px;
+        padding-right: 50px;
+    }
+
   }
 
-.about-container .col-md-7{
+/* .about-container .col-md-7{
     padding-left: 50px;
-}
+} */
 
 .about-container p{
     color: rgb(75, 75, 75);
@@ -107,6 +124,8 @@ body{
     padding-top: 75px;
     padding-bottom: 10px;
     color: darkcyan;
+    font-weight: 800;
+
 }
 
 
@@ -120,7 +139,7 @@ body{
     font-weight: bold;
 }
 
-.about-container .emaillink {
+.about-container .link {
     font-weight: bold;
 }
 
@@ -181,6 +200,7 @@ body{
     padding-top: 75px;
     padding-bottom: 10px;
     color: darkcyan;
+    font-weight: 800;
 }
 
 .now-container a{
@@ -229,11 +249,13 @@ body{
     column-rule-color: #fff;
     font-size: 15px; 
     color: rgb(75, 75, 75);
+    font-weight: 600;
 }
 
 .timeline li h4 span{
-    font-weight: bold; 
+
     color: darkcyan; 
+    font-weight: 600;
 }
 
 .timeline li:before{
@@ -257,10 +279,11 @@ body{
 
 .social-icons{
     top: 50%;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
     position: sticky;
     z-index: 1;
     width: 80px;
+
    
 }
 
@@ -302,14 +325,19 @@ body{
     top: 0;
     position: sticky;
     z-index: 2;
+    
 }
 
 .navbar {
     background-color: rgb(247, 247, 247); 
     height: 60px;
     /* border: 2px solid lightgrey; */
+    
 
 }
+
+
+
 
 .navbar-brand{
     color: rgb(75, 75, 75) !important;
@@ -324,6 +352,17 @@ body{
     font-weight: bold !important;
 }
 
+.navbar h1{
+    font-family: 'Inter', sans-serif;   
+    font-weight: 600;
+}
+
+.navbar a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+
+}
+
 .nav-bar .fa-bars{
     font-size: 35px;
     color: darkgray;
@@ -333,10 +372,17 @@ body{
     outline: none !important;
 }
 
-.navbar nav{
-    float: right;
+.navbar-nav{
+    
     text-align: right;
+    
+
+        background-color: rgb(247, 247, 247) !important;
+     
+
 }
+
+
 
 .nav-link{
     border-bottom: 1px transparent;
@@ -383,9 +429,12 @@ body{
 }
 
 .booknotes h3{
+    
+    font-weight: 800;
     margin-bottom: 15px;
     margin-top: 10px; 
     color: darkcyan
+    
 }
 
 .booknotes p{
@@ -455,6 +504,7 @@ body{
 .projects h3{
     margin-bottom: 15px;
     margin-top: 10px; 
+    font-weight: 800;
     color: darkcyan
 }
 
@@ -463,6 +513,7 @@ body{
 }
 
 .projects .col-md-4{
+    padding-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -486,8 +537,8 @@ body{
 
 .projects-box span{
     margin: 3px;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 600;
     color: rgb(75, 75, 75);
 }
 
@@ -537,13 +588,82 @@ body{
 }
 
 .challenges h3{
+    font-weight: 800;
     margin-bottom: 15px;
     margin-top: 10px; 
-    color: darkcyan
+    color: darkcyan;
+    
+    
+
 }
 
 .challenges p{
     color: rgb(75, 75, 75)
+}
+
+/* Causes */
+.causes{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 300px;
+    padding-right: 300px;
+
+
+}
+
+@media (max-width:629px) {
+    img#optionalstuff {
+      display: none;
+    }
+
+    .about-container {
+        padding-left: 75px;
+        padding-right: 50px;
+    }
+
+  }
+
+.causes h3{
+    font-weight: 800;
+    margin-bottom: 15px;
+    margin-top: 10px; 
+    color: darkcyan;
+    
+    
+
+}
+.causes h4{
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 10px; 
+    color: rgb(75, 75, 75);
+}
+
+.causes h5{
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 10px; 
+    font-size: 16;
+    color: rgb(75, 75, 75);
+    
+    
+
+}
+
+.causes p{
+    color: rgb(75, 75, 75);
+}
+
+.causes a{
+    color: rgb(75, 75, 75);
+    font-weight: 300;
+}
+
+
+
+.causes a:hover{
+    color: rgb(75, 75, 75);
+
 }
 
 /* Contact Section */
@@ -563,6 +683,11 @@ body{
 
 .contact a{
     color: rgb(75, 75, 75);
+}
+
+.contact h4{ 
+    color: darkcyan;
+    font-size: 16;
 }
 
 .contact a:hover{
