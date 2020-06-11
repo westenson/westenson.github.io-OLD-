@@ -409,10 +409,30 @@ body{
 /* Book Notes */
 
 .booknotes{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 300px;
+        padding-right: 300px;
+        margin-bottom: -200px;
+        padding-bottom: 0px;
+       
+    
+    
 
 }
+
+@media (max-width:629px) {
+    img#optionalstuff {
+      display: none;
+    }
+
+    .booknotes {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+  }
 
 
 
@@ -491,6 +511,88 @@ body{
 .books-box:hover span{
     color: #fff;
 }
+
+
+
+.book-container .btn{
+    padding: 8px 20px 8px 20px;
+    margin: 0px; 
+    border-radius: 30px;
+    border: none;
+    background: none;
+    color: rgb(75, 75, 75)
+}
+
+
+.book-container .btn:focus{
+    box-shadow: none !important;
+}
+
+.book-container .btn:hover{
+    border: none !important; 
+    background:none !important;
+    color: rgb(75, 75, 75);    
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+
+    
+  }
+  
+  .modal-header h4 a {
+    font-weight: 600;
+    color: darkcyan
+
+  }
+  .modal-body h5 {
+    font-weight: 400;
+    color: darkcyan
+
+  }
+
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1 rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  }
+
+  .modal-body p{
+    font-weight: 300;
+    color: rgb(75, 75, 75);
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+
 
 
 /* Projects */

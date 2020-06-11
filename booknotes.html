@@ -4,6 +4,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166677991-1"></script>
     <script>
@@ -14,28 +21,16 @@
         gtag('config', 'UA-166677991-1');
     </script>
 
+    <!-- smooth scroll -->
     <script src="smooth-scroll.polyfills.min.js"></script>
 
-
-
+    <!-- link css -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;900&family=Roboto+Slab:wght@100&display=swap"
         rel="stylesheet">
-
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,11 +74,12 @@
 
         <!-- Book Notes -->
         <div class="booknotes" id="booknotes">
-            <div class="container">
+            <div class="book-container">
                 <h3 class="text-center">book notes</h3>
                 <p class="text-center"> i've found the only true way to learn is by reflecting. <br>
                     this page was inspired by <a href="https://sivers.org/book" target="_blank">derek sivers.</a> <br>
-                    i highly recommend: <i class="fa fa-star"></i><span></span></p>
+                    i highly recommend: <i class="fa fa-star"></i><br>
+                    click to view my notes: <i class="fa fa-pencil"></i></p>
 
                 <p class="text-center"><br>my goal is to have in-depth notes for each of the following
                     and all futures books i read. this will take time.</p>
@@ -120,11 +116,114 @@
                     </div>
 
                     <div class="col-md-4">
+
                         <div class="books-box">
-                            <i class="fa fa-star"></i><span>Innovators</span>
-                            <p> History of the computer and the internet. Must read.</p>
+
+
+                            <button type="button" class="btn btn-primary text-left" id="myBtn">
+
+
+                                <i class="fa fa-star"></i><i class="fa fa-pencil"></i><span>Innovators</span>
+                                <p> History of the computer and the internet. Must read.</p>
+                            </button>
+
+                        </div>
+
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title"><a href="
+                                            https://www.amazon.com/Innovators-Hackers-Geniuses-Created-Revolution/dp/1476708703
+                                            " target="_blank">Innovators - by Walter Isaacson</a></h4>
+
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>How Strongly I Recommend: 10/10
+                                            <br><br>
+                                            History of the computer and the internet by one of the best biographers of
+                                            all time IMO</p>
+                                        <h5>My Notes:</h5>
+                                        <p>
+
+                                            Ada Lovelace - gifted at mathematics and considered the first computer
+                                            programmer. Worked with Charles Babbage on Babbage's Difference Engine, a
+                                            mechanical machine that could calculate polynomial functions. Lovelace later
+                                            proposed the Analytical Engine, an improved version of the Difference
+                                            Engine. Died in 1852.
+
+                                            <br><br>
+                                            AT&T's Bell Labs was the "idea factory" during and after WWII where hundreds
+                                            of scientists and engineers were given a relatively free hand to explore and
+                                            improvise. Important names here are John Bardeen, Walter Brattain, and
+                                            William Shockley; they created the transistor, the fundamental building
+                                            block of the microprocessor.
+
+                                            <br><br>
+                                            Not long after, Gordon Moore predicted the doubling of a microprocessor's
+                                            power every year and a half, now known as Moore's Law which has been
+                                            incredibly accurate
+
+                                            <br><br>
+                                            Universities and the U.S. military created the network ARPANET in 1969 which
+                                            was opened to more companies in 1973.
+
+                                            <br><br>
+                                            Another innovation hotspot was Xerox PARC in the 1970s with innovations
+                                            including ethernet, the graphic user interface and the mouse. A popular
+                                            phrase at the park was "the best way to predict the future is to invent it."
+
+                                            <br><br>
+                                            Bill Gates was a computer maniac, lucky to have grown up with access to one.
+                                            Microsoft was founded with the foresight that hardware would soon become
+                                            commodified (with low profits) and software would rule the world. We know
+                                            how that bet turned out.
+
+                                            <br><br>
+                                            The beginnings of the personal computer can be traced back to the Homebrew
+                                            Computer Club. Who was in the club? None other than Steve Jobs and Steve
+                                            Wozniak. Jobs was a visionary with an acute sense for aesthetic and user
+                                            interaction.
+
+                                            <br><br>
+                                            Overarching themes:
+                                            The internet and computer were built through an incremental and continuous
+                                            effort of people from different backgrounds and different skills. Although
+                                            "open-source" was not a term at the time, this is how the internet and
+                                            computer were created and we wouldn't have it today if it wasn't for
+                                            people's
+                                            willingness to share their discoveries for all to benefit and push the
+                                            industry forward.
+
+                                            <br><br>
+                                            This book is a series of mini biographies for a reason. It took many people
+                                            to create the Digital Revolution. Isaacson attributes a powerful role in
+                                            this revolution to ecosystems. Silicon Valley includes venture capital,
+                                            strong universities churning out smart computer scientists and engineers and
+                                            even significant government funding. All these came together to provide the
+                                            perfect environment for innovation.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
                         </div>
                     </div>
+
+
+
+
+
+
+
+
 
                     <div class="col-md-4">
                         <div class="books-box">
@@ -317,6 +416,9 @@
                 <p class="text-center"> <br> sorted in chronological order, from most recently read to least recently
                     read </p>
             </div>
+
+
+            <div id="overlay"></div>
         </div>
 
     </section>
@@ -327,6 +429,17 @@
             offset: 50
         });
     </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#myBtn").click(function () {
+                $("#myModal").modal("show");
+            });
+
+        });
+    </script>
+
+
 
 </body>
 
