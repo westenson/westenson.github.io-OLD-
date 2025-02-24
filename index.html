@@ -1,394 +1,100 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wally Estenson</title>
-
-    <meta property="og:image" content="img/wally5.png" />
+    
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:image" content="img/hero-image.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://westenson.github.io" />
     <meta property="og:title" content="Wally Estenson" />
     <meta property="og:author" content="Wally Estenson" />
-    <meta property="og:description" content="Wally Estenson: Who I am, what I'm doing, and where I'm going." />
+    <meta property="og:description" content="A minimalist yet striking portfolio of Wally Estenson." />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <!-- mailchimp connection -->
-    <script
-        id="mcjs">!function (c, h, i, m, p) {
-                m = c.createElement(h), p = c.getElementsByTagName(h)[0],
-                    m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
-            }(document, "script",
-                "https://chimpstatic.com/mcjs-connected/js/users/696d4e13406352773b1893902/8007dafe4249440089bd4ac85.js");</script>
-
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166677991-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-166677991-1');
-    </script>
-
-    <script src="smooth-scroll.polyfills.min.js"></script>
-
-
-
+    <!-- Google Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Bootstrap & Custom Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;900&family=Roboto+Slab:wght@100&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
-
 <body>
 
-    <!-- Header Section -->
-    <section id="header">
-        <div class="container text-center">
-            <div class="user-box">
-                <img src="img/wally.png">
-                <h1>wally estenson</h1>
-                <p>welcome to my site. i'm glad you're here!</p>
-            </div>
+    <!-- Hero Section with Background Image -->
+    <section id="hero" class="d-flex align-items-center justify-content-center text-center" style="background: url('img/hero-image.jpg') center/cover no-repeat; height: 100vh;">
+        <div class="container text-white">
+            <img src="img/wally.png" class="profile-img mb-3" alt="Wally Estenson">
+            <h1 class="display-4">Wally Estenson</h1>
+            <p class="lead">Exploring the world through adventure, technology, and ideas.</p>
+            <a href="#about" class="btn btn-outline-light mt-3">Learn More</a>
         </div>
-
-        <!-- <div class="scroll-btn">
-            <div class="scroll-bar"><a href="#about"><span> </span></a></div>
-        </div> -->
     </section>
 
-    <!-- User Info Section -->
-    <section id="user-info">
-
-        <div class="nav-bar">
-            <nav class="navbar navbar-expand-lg">
-
-
-                <a class="navbar-brand" href="index.html#top">wally estenson</a>
-
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-
-
-                    <i class="fa fa-bars"></i>
-
-
-
-                </button>
-
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-
-                    <ul class="navbar-nav ml-auto">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">about</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#now">now </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://anchor.fm/wally50" target="_blank">podcast </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">projects </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">contact </a>
-                        </li>
-
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
-
-
-        <!-- About Section -->
-
-
-
-        <div class="about-container" id="about">
-            <!-- <div class="row"> -->
-
-            <!-- <div class="col-md-5 text-center">
-                    <img id="optionalstuff" src="img/wally4.png" class="profile-img">
-                </div> -->
-
-            <!-- <div class="col-md-7"> -->
-            <h3>me in 30 seconds</h3>
-            <p> In 2020, I graduated from the the University of Wisconsin
-                where I studied Finance and Economics with minors in Computer Science
-                and Environmental Studies. I'm a Minnesota native and recently moved to Chicago to work as a Healthcare
-                Investment
-                Banking Analyst.
-                I have countless interests, mostly unrelated; currently, I'm fascinated by consumer healthcare
-                technology. I'm an avid outdoorsman with a love for hiking, skiing, biking, camping, and enjoying nature
-                with others.
-                A few causes I deeply care about are <a class="link" href="causes.html">climate change, wealth
-                    inequality, mental health, and the failings of our education system.</a> <a class="emaillink"
-                    href="causes.html" I am grateful for my health, a loving family, and exceptional friends></a>
-                <br><br>
-                I love getting to know people, their stories and perspectives, so please <a class="link"
-                    href="mailto:wmestenson@gmail.com" target="_blank">email</a> me.
-
-                <br><br>
-                <a href="resume.pdf" target="_blank">
-                    <button type="button" class="btn btn-primary">
-                        <i class="fa fa-download"></i>Resume</a></button>
-
-
-            </p>
-            <!-- </div> -->
-            <!-- </div> -->
-        </div>
-
-
-        <!-- Social Icons -->
-
-        <div class="social-icons">
-            <ul>
-                <a href="https://www.linkedin.com/in/wmestenson/" target="_blank">
-                    <li><i class="fa fa-linkedin"></i></li>
-                </a>
-
-                <a href="https://www.instagram.com/wallyestenson/" target="_blank">
-                    <li><i class="fa fa-instagram"></i></li>
-                </a>
-
-                <a href="https://twitter.com/WallyEstenson" target="_blank">
-                    <li><i class="fa fa-twitter"></i></li>
-                </a>
-
-                <!-- <a href="https://www.youtube.com/channel/UCX-lybiFffnhf4xvgfItjTg?view_as=subscriber" target="_blank"><li><i class="fa fa-youtube"></i></li></a> -->
-                <a href="https://github.com/westenson" target="_blank">
-                    <li><i class="fa fa-github"></i></li>
-                </a>
-                <a href="mailto:wmestenson@gmail.com" target="_blank">
-                    <li><i class="fa fa-envelope"></i></li>
-                </a>
-
-            </ul>
-        </div>
-
-        <div class="spacer"></div>
-
-        <!-- Now Section -->
-        <div class="now-container" id="now">
-
-            <h3 class="text-center">what i'm doing now</h3>
-            <p class="text-center">this is a <a href="https://nownownow.com/about" target="_blank">now page.</a> i use
-                this to motivate
-                myself and show you what i'm currently focused on. <br>i was inspired by <a
-                    href="https://nownownow.com/about" target="_blank">others.</a></p>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="timeline">
-                            <li>
-                                <h4><span>1 - </span> Home Hobbies</h4>
-                                <p>I recently moved to the great city of Chicago. I'm exploring and would love
-                                    recommendations.
-
-                                </p>
-
-                            </li>
-                            <li>
-                                <h4><span>2 - </span> Podcast</h4>
-                                <p> If you haven't heard already, I've got a podcast! The Wally Pod features
-                                    inspiring interview with some of my extraordinary friends. The focus is on young
-                                    people
-                                    and the ways they have nagivated college, begun their careers, and view the world.
-                                    My hope
-                                    is to help and inspire others in their own endeavors. The Wally Pod can be found
-                                    wherever you
-                                    listen to podcasts.
-                                </p>
-
-                            </li>
-                            <li>
-                                <h4><span>3 - </span> Meditation</h4>
-                                <p>I've currently taking Sam Harris's Waking Up 30-day course. My thoughts will follow
-                                    my completion.
-                                </p>
-
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-6">
-                        <ul class="timeline">
-                            <li>
-                                <h4><span>4 - </span> Book Notes</h4>
-                                <p>One of the most important things that I've learned in recent
-                                    years is the power of reflection. In a world with so much content to
-                                    consume, most of it goes in one ear and out the other. The most powerful
-                                    technique I've found to retain important information is deliberate reflection.
-                                    That is why I'll be spending time every week for the foreseeable future
-                                    reflecting on and condensing the notes I've taken on the books I read during
-                                    college. I hope to keep a permanent database of my notes on this site for myself
-                                    and anyone who cares to read.
-                                </p>
-
-                            </li>
-
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <p class="text-center">updated september 13th, 2020 from chicago, il.</p>
-
-        </div>
-        </div>
-
-        <div class="spacer"></div>
-
-
-        <!-- Projects -->
-        <div class="projects" id="projects">
-            <div class="container">
-                <h3 class="text-center">projects</h3>
-                <p class="text-center"> this is only the beginning.</p>
-
-                <div class="row">
-
-                    <div class="col-md-4">
-                        <a href="https://anchor.fm/wally50" target="_blank"><span>
-                                <div class="projects-box">
-
-                                    <span>Podcast</span>
-                                    <p> Check out my podcast, The Wally Pod. About once a month I
-                                        release an inspiring and educational interview with an incredibly interesting person. 
-                                    </p>
-
-
-                                </div>
-                            </span></a>
-                    </div>
-
-                    <div class="col-md-4">
-                        <a href="booknotes.html"><span>
-                                <div class="projects-box">
-
-                                    <span>Book Notes</span>
-
-                                    <p> Notes on every book I've read since the first-day of college. A way for me to
-                                        reflect and share.</p>
-                                </div>
-                            </span></a>
-                    </div>
-
-
-
-                    <div class="col-md-4">
-                        <a class="link" href="causes.html"><span>
-                                <div class="projects-box">
-
-                                    <span>Causes I Care About</span>
-
-                                    <p> Our world faces many problems. Learn about a few a deeply care about
-                                        and strongly believe we can solve together.
-                                    </p>
-                                </div>
-                            </span></a>
-                    </div>
-
-
-                    <div class="col-md-4">
-                        <a href="https://github.com/westenson/westenson.github.io" target="_blank"><span>
-                                <div class="projects-box">
-
-                                    <span>This Website</span>
-
-                                    <p> This is my website, written in HTML, CSS, and JS. I decided against options like
-                                        WordPress or Wix because I wanted to learn how to do it myself. Suggestions are
-                                        welcome!</p>
-                                </div>
-                            </span></a>
-                    </div>
-                </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Wally Estenson</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <div class="spacer"></div>
-
-
-        <!-- Contact -->
-
-        <div class="contact" id="contact">
-            <div class="container text-center">
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <i class="fa fa-phone"></i>
-                        <p>612-859-9900</p>
-                    </div>
-                    <div class="col-md-4">
-                        <i class="fa fa-envelope"></i>
-                        <p><a href="mailto:wmestenson@gmail.com" target="_blank">wmestenson@gmail.com</a></p>
-                    </div>
-                    <div class="col-md-4">
-                        <i class="fa fa-chrome"></i>
-                        <p><a href="https://westenson.github.io/" target="_blank">westenson.github.io</a></p>
-                    </div>
-                </div>
-
-                <h4 class="text-center"> Created by Wally Estenson</h4>
-
-
-
-
-
-            </div>
-
-
-
-        </div>
-
+    <!-- About Section -->
+    <section id="about" class="container text-center my-5">
+        <h2>About Me</h2>
+        <p class="lead">Finance, technology, and adventure enthusiast. Currently exploring the intersections of crypto, fintech, and the great outdoors.</p>
     </section>
 
-    <script>
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 500,
-            offset: 20
-        });
-    </script>
+    <!-- Projects Section -->
+    <section id="projects" class="container my-5">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="project-card" style="background: url('img/podcast.jpg') center/cover no-repeat;">
+                    <a href="https://anchor.fm/wally50" target="_blank">Podcast</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-card" style="background: url('img/booknotes.jpg') center/cover no-repeat;">
+                    <a href="booknotes.html">Book Notes</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-card" style="background: url('img/causes.jpg') center/cover no-repeat;">
+                    <a href="causes.html">Causes I Care About</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script>
-        $('.navbar-collapse a').click(function () {
-            $(".navbar-collapse").collapse('hide');
-        });
-    </script>
+    <!-- Contact Section -->
+    <section id="contact" class="container text-center my-5">
+        <h2>Contact</h2>
+        <p>Feel free to reach out!</p>
+        <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/in/wmestenson/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/wallyestenson/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="mailto:wmestenson@gmail.com"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+    </section>
 
+    <footer class="text-center bg-dark text-white py-3">
+        &copy; 2025 Wally Estenson. All Rights Reserved.
+    </footer>
 
-
+    <!-- Bootstrap & jQuery Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
